@@ -23,3 +23,17 @@ Overview: Azure Monitor is a comprehensive monitoring solution. Log Analytics is
 | Security & Compliance | Centralized logging for security events. Provides audit trails. Helps meet compliance with historical data. | Centralizes logs for services like CloudTrail. CloudWatch Alarms can monitor for compliance events. | Centralized logs for auditing. Integrates with Security Command Center. |
 | Pricing Model | Charged based on data ingestion and retention. Per-GB pricing model for Log Analytics. | Free tier for basic metrics. Custom metrics and log data are charged per GB. Log Insights is priced per GB of data scanned. | Pricing based on data ingestion. Log data over a certain size is charged per GB. Free tier includes a generous amount of data. |
 | Integration for DevSecOps | Essential for monitoring CI/CD health. Log Analytics is used to troubleshoot deployment failures. | CloudWatch can trigger alerts on CI/CD metrics. Provides feedback on pipeline health. | Integrates with Cloud Build and other services. Provides real-time logs for CI/CD processes. |
+
+
+# 3. Azure Policy
+
+Overview: Azure Policy helps enforce organizational standards. It defines rules for resource creation and updates. It ensures new resources are compliant with security requirements.
+
+| Category | Azure Policy | AWS Config | Google Cloud Policy Intelligence |
+| :--- | :--- | :--- | :--- |
+| Core Features | Audits and enforces resource configurations. Supports built-in and custom policies. Provides compliance dashboards. | Continuously records configurations and changes. Evaluates compliance against rules. | Recommends policies based on usage. Manages IAM policies. Not a direct enforcement tool. |
+| Security & Compliance | Enforces security best practices. Integrates with Defender for Cloud for compliance reports. | Audits resources against compliance benchmarks (CIS, PCI). Provides a timeline of configuration changes. | Helps analyze and manage IAM policies. Policy Analyzer checks if a principal has permissions. |
+| Pricing Model | No cost for policy definitions. Cost is from underlying services and remediation. | Priced on number of configuration items and rules. Free tier for limited evaluations. | Not a separate service with its own pricing. Part of Cloud IAM, which is a free service. |
+| Integration for DevSecOps | Can be used in CI/CD to validate templates. Ensures compliance by design. | AWS Config validates resources deployed by a CI/CD pipeline. Can trigger remediation via Lambda. | Helps developers understand the security impact of code. Provides insights into permissions and policies. |
+
+
