@@ -37,3 +37,27 @@ Overview: Azure Policy helps enforce organizational standards. It defines rules 
 | Integration for DevSecOps | Can be used in CI/CD to validate templates. Ensures compliance by design. | AWS Config validates resources deployed by a CI/CD pipeline. Can trigger remediation via Lambda. | Helps developers understand the security impact of code. Provides insights into permissions and policies. |
 
 
+
+# 4. Microsoft Defender for Cloud
+
+Overview: Defender for Cloud is a CSPM and CWP solution. It provides unified security management and threat protection. It supports hybrid and multi-cloud environments.
+
+| Category | Defender for Cloud | AWS Security Hub | Google Security Command Center |
+| :--- | :--- | :--- | :--- |
+| Core Features | Central security score. Threat protection for servers, containers, databases. Multi-cloud support. | Central dashboard for security alerts. Automated compliance checks. Consolidates findings from many AWS services. | Centralized platform for security and risk. Offers asset discovery and vulnerability scanning. |
+| Security & Compliance | Regulatory compliance dashboard. Assesses compliance against HIPAA and PCI DSS. | Consolidates compliance findings from AWS services. Checks against industry standards. | Provides a "compliance" view. Helps track posture against benchmarks like CIS. |
+| Pricing Model | CSPM features are free. Advanced CWP plans are charged per-resource (e.g., per-server). | Based on number of security checks and findings ingested. Free tier for the first 10,000 findings. | Premium tier is based on the number of protected resources. Standard tier is free. |
+| Integration for DevSecOps | Scans container images for vulnerabilities in CI/CD. Provides recommendations to developers. | Ingests findings from CI/CD tools. Developers can see security issues early. | Scans for misconfigurations. Findings can be routed to developers. |
+
+
+# 5. Azure Sentinel (SIEM/SOAR)
+
+Overview: Azure Sentinel (now Microsoft Sentinel) is a cloud-native SIEM and SOAR solution. It provides a single pane of glass for security analytics. It offers threat intelligence across the enterprise.
+
+| Category | Azure Sentinel | AWS GuardDuty & Security Hub | Google Security Command Center |
+| :--- | :--- | :--- | :--- |
+| Core Features | SIEM/SOAR capabilities. Ingests data from many sources. Playbooks for automated responses. | GuardDuty is a threat detection service. Security Hub aggregates findings for a SIEM. | A central hub for security findings. Integrates with Chronicle Security Operations for SIEM/SOAR. |
+| Security & Compliance | Provides advanced threat detection. Centralizes security data for auditing. Helps meet compliance requirements. | GuardDuty uses ML to detect threats. Security Hub centralizes compliance findings from various services. | Offers a high-level view of security posture. Helps detect threats and vulnerabilities. |
+| Pricing Model | Priced based on data ingestion (per GB). There are tiers based on commitment. | GuardDuty pricing is based on data analyzed. Security Hub is priced per check and per finding. | The Standard tier is free. The Premium tier has a fee based on protected resources. |
+| Integration for DevSecOps | Can ingest logs from CI/CD pipelines. Detects suspicious activity like unauthorized deployments. | Security Hub findings provide security feedback to CI/CD. GuardDuty monitors access keys used in pipelines. | Monitors CI/CD pipelines for threats. Findings can trigger automated remediation via Cloud Functions. |
+
